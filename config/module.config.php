@@ -1,23 +1,23 @@
 <?php
-namespace ZendSkeletonModule;
+namespace BitlyShortener;
 
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
     'controllers' => [
         'factories' => [
-            Controller\SkeletonController::class => InvokableFactory::class,
+            Controller\BitlyShortenerController::class => InvokableFactory::class,
         ],
     ],
     'router' => [
         'routes' => [
-            'module-name-here' => [
+            'bitlyshortener' => [
                 'type'    => 'Literal',
                 'options' => [
                     // Change this to something specific to your module
-                    'route'    => '/module-specific-root',
+                    'route'    => '/bitly-shortener',
                     'defaults' => [
-                        'controller'    => Controller\SkeletonController::class,
+                        'controller'    => Controller\BitlyShortenerController::class,
                         'action'        => 'index',
                     ],
                 ],
@@ -31,7 +31,7 @@ return [
     ],
     'view_manager' => [
         'template_path_stack' => [
-            'ZendSkeletonModule' => __DIR__ . '/../view',
+            'BitlyShortener' => __DIR__ . '/../view',
         ],
     ],
 ];
