@@ -1,7 +1,7 @@
 <?php
 namespace BitlyShortener;
 
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 return [
     'controllers' => [

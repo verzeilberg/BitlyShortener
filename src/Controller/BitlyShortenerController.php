@@ -1,7 +1,7 @@
 <?php
 namespace BitlyShortener\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\Controller\AbstractActionController;
 
 class BitlyShortenerController extends AbstractActionController
 {
